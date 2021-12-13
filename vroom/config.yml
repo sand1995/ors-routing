@@ -26,7 +26,7 @@ routingServers:
       port: '5000'
   ors:
     driving-car:
-      host: '35.188.90.8'
+      host: '35.231.202.42'
       port: '8080'
     driving-hgv:
       host: '0.0.0.0'
