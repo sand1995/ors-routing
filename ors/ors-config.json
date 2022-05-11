@@ -9,10 +9,10 @@
     "services": {
       "matrix": {
         "enabled": true,
-        "maximum_routes": 1000000000,
-        "maximum_routes_flexible": 250,
-        "maximum_search_radius": 50000,
-        "maximum_visited_nodes": 1000000,
+        "maximum_routes": 10000000,
+        "maximum_routes_flexible": 25000,
+        "maximum_search_radius": 5000000,
+        "maximum_visited_nodes": 100000000,
         "allow_resolve_locations": true,
         "attribution": "openrouteservice.org, OpenStreetMap contributors"
       },
@@ -21,21 +21,21 @@
         "maximum_range_distance": [
           {
             "profiles": "any",
-            "value": 50000
+            "value": 500000
           },
           {
             "profiles": "driving-car, driving-hgv",
-            "value": 100000
+            "value": 1000000
           }
         ],
         "maximum_range_time": [
           {
             "profiles": "any",
-            "value": 18000
+            "value": 180000
           },
           {
             "profiles": "driving-car, driving-hgv",
-            "value": 3600
+            "value": 36000
           }
         ],
         "fastisochrones": {
@@ -56,7 +56,7 @@
             },
             {
               "profiles": "driving-car, driving-hgv",
-              "value": 10800
+              "value": 108000
             }
           ],
           "profiles": {
@@ -86,7 +86,7 @@
         "sources": [
           "/ors-core/data/osm_file.pbf"
         ],
-        "init_threads": 2,
+        "init_threads": 1,
         "attribution": "openrouteservice.org, OpenStreetMap contributors",
         "elevation_preprocessed": false,
         "profiles": {
@@ -100,17 +100,17 @@
             "elevation_cache_path": "cgiar_provider",
             "elevation_cache_clear": false,
             "instructions": true,
-            "maximum_distance": 1000000,
-            "maximum_distance_dynamic_weights": 1000000,
-            "maximum_distance_avoid_areas": 1000000,
-            "maximum_waypoints": 5000,
-            "maximum_snapping_radius": 400,
-            "maximum_avoid_polygon_area": 200000000,
-            "maximum_avoid_polygon_extent": 20000,
-            "maximum_distance_alternative_routes": 100000,
+            "maximum_distance": 10000000,
+            "maximum_distance_dynamic_weights": 10000000,
+            "maximum_distance_avoid_areas": 10000000,
+            "maximum_waypoints": 50000,
+            "maximum_snapping_radius": 4000,
+            "maximum_avoid_polygon_area": 2000000000,
+            "maximum_avoid_polygon_extent": 200000,
+            "maximum_distance_alternative_routes": 1000000,
             "maximum_alternative_routes": 3,
-            "maximum_distance_round_trip_routes": 100000,
-            "maximum_speed_lower_bound": 80,
+            "maximum_distance_round_trip_routes": 1000000,
+            "maximum_speed_lower_bound": 50,
             "preparation": {
               "min_network_size": 200,
               "min_one_way_network_size": 200,
@@ -137,9 +137,9 @@
             "parameters": {
               "encoder_flags_size": 8,
               "encoder_options": "turn_costs=true|block_fords=false|use_acceleration=true",
-              "maximum_distance": 1000000,
+              "maximum_distance": 100000000,
               "elevation": true,
-              "maximum_snapping_radius": 350,
+              "maximum_snapping_radius": 3500,
               "preparation": {
                 "min_network_size": 200,
                 "min_one_way_network_size": 200,

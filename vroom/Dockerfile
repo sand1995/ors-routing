@@ -63,3 +63,8 @@ HEALTHCHECK --start-period=10s CMD curl --fail -s http://localhost:3000/health |
 EXPOSE 3000
 ENTRYPOINT ["/bin/bash"]
 CMD ["/docker-entrypoint.sh"]
+
+# Docker commands:
+# sudo docker build -t vroom:mexico ./
+# sudo docker tag vroom:mexico gcr.io/servinf-geo-rutas-back-prod/vroom:mexico
+# docker push gcr.io/servinf-geo-rutas-back-prod/vroom:mexico

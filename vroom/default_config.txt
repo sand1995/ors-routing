@@ -26,26 +26,26 @@ routingServers:
       port: '5000'
   ors:
     driving-car:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     driving-hgv:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     cycling-regular:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     cycling-mountain:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     cycling-road:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     cycling-electric:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     foot-walking:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'
     foot-hiking:
-      host: '35.188.90.8'
+      host: '34.138.234.83'
       port: '8080'

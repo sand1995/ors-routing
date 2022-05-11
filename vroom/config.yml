@@ -2,16 +2,16 @@ cliArgs:
   geometry: true # retrieve geometry (-g)
   threads: 4 # number of threads to use (-t)
   explore: 5 # exploration level to use (0..5) (-x)
-  limit: '1mb' # max request size
+  limit: '10mb' # max request size
   logdir: '/..' # the path for the logs relative to ./src
-  logsize: '100M' # max log file size for rotation
-  maxlocations: 100000 # max number of jobs/shipments locations
-  maxvehicles: 2000 # max number of vehicles
+  logsize: '1000M' # max log file size for rotation
+  maxlocations: 1000000 # max number of jobs/shipments locations
+  maxvehicles: 20000 # max number of vehicles
   override: true # allow cli options override (-g, -t and -x)
   path: '' # VROOM path (if not in $PATH)
   port: 3000 # expressjs port
   router: 'ors' # routing backend (osrm, libosrm or ors)
-  timeout: 300000 # milli-seconds
+  timeout: 3000000 # milli-seconds
   baseurl: '/' #base url for api
 routingServers:
   osrm:
@@ -25,27 +25,32 @@ routingServers:
       host: '0.0.0.0'
       port: '5000'
   ors:
+    # colombia ors: 34.138.234.83
+    # ecuador ors: 34.68.172.185
+    # chile ors: 35.192.83.4
+    # peru ors: 35.226.3.46
+    # mexico ors: 34.68.176.58
     driving-car:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     driving-hgv:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     cycling-regular:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     cycling-mountain:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     cycling-road:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     cycling-electric:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     foot-walking:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'
     foot-hiking:
-      host: '35.231.202.42'
+      host: '34.68.176.58'
       port: '8080'

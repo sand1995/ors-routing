@@ -4,7 +4,8 @@ From osrm/osrm-backend:latest
 RUN apt-get update
 RUN apt-get -qq -y install wget
 RUN mkdir data
-RUN wget -q http://download.geofabrik.de/south-america/colombia-latest.osm.pbf -O data/osm_file.pbf
+#RUN wget -q http://download.geofabrik.de/south-america/colombia-latest.osm.pbf -O data/osm_file.pbf
+RUN wget -q http://download.geofabrik.de/south-america-latest.osm.pbf -O data/osm_file.pbf
 RUN osrm-extract -p /opt/car.lua ./data/osm_file.pbf
 # RUN osrm-extract ./data/osm_file.pbf
 RUN osrm-partition ./data/osm_file.osrm
