@@ -31,26 +31,26 @@ routingServers:
     # peru ors: 35.226.3.46
     # mexico ors: 34.68.176.58
     driving-car:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     driving-hgv:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     cycling-regular:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     cycling-mountain:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     cycling-road:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     cycling-electric:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     foot-walking:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'
     foot-hiking:
-      host: '34.68.176.58'
+      host: '0.0.0.0'
       port: '8080'

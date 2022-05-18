@@ -91,7 +91,8 @@
         "elevation_preprocessed": false,
         "profiles": {
           "active": [
-            "car"
+            "car",
+            "walking"
           ],
           "default_params": {
             "encoder_flags_size": 8,
